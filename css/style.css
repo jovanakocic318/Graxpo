@@ -9,10 +9,12 @@ html{
 body{
     font-family: 'Open Sans', sans-serif;
     color: #81868E;
+    background-color: #ECECEC;
 }
 img{
     max-width: 100%;
 }
+
 
 .navbar .navbar-brand{
     color: #E84C3D !important;
@@ -86,7 +88,9 @@ h1,h2,
    background: #fff;
    border: 1px solid #E84C3D
 }
-.service .line:first-of-type{
+.service .line:first-of-type,
+.team .line:first-of-type,
+.contact .line:first-of-type{
     margin: 0 auto 2rem;
 }
 .service .fa{
@@ -116,4 +120,49 @@ h1,h2,
 .service-item{
     border-radius: 10px;
     box-shadow: 0 0 5px #ccc;
+}
+.portfolio .number{
+    font-size: 2rem;
+    text-decoration: none;
+}
+.portfolio .fa-item{
+    font-size: 2.5rem;
+    
+}
+.portfolio .line,
+.subscribe .line{
+    border: white;
+}
+.team a{
+    
+    text-decoration: none;
+}
+.team .fa{
+    font-size: 2rem;
+}
+.team-hover{
+    position:absolute;
+    bottom: 2%;
+   display: none;
+}
+.team figure:hover .team-hover{
+    display:block;
+    transition: 0.5s linear
+}
+.subscribe input::placeholder {
+  color: #fff;
+}
+.contact .fa{
+    font-size: 30px
+}
+.contact a{
+    text-decoration: none;
+}
+.contact input,
+.contact textarea,
+.contact button{
+    border-radius: 0;
+}
+.contact textarea{
+   resize: none
 }
